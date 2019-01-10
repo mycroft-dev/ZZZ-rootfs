@@ -162,6 +162,8 @@ if ! pgrep python ; then
 fi
 
 sleep 5  # give X time to start
+xmessage -center $( ifconfig wlan0 | grep "inet ") &
+
 echo "Looking..."
 ps aux | grep "X"
 xeyes &

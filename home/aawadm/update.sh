@@ -180,7 +180,7 @@ echo "Start time..." | tee -a /home/aawadm/xorg_process.log
 date | tee -a /home/aawadm/xorg_process.log
 
 echo "Launch GUI"
-/usr/bin/mycroft-gui-app --autoconnect --maximize --hideTextInput > /home/aawadm/gui.log 2>&1
+/usr/bin/mycroft-gui-app --autoconnect --maximize --hide-mouse --hideTextInput > /home/aawadm/gui.log 2>&1
 EOF
 sudo chmod a+x /home/aawadm/test_mycroft.sh
 
